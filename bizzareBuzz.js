@@ -854,8 +854,8 @@ CountDownTimer.parse = function(seconds) {
         $(".sellButton").prop('disabled', true);        
                
         var display = document.querySelector('#time');
-        timer = new CountDownTimer(480);
-        timeObj = CountDownTimer.parse(480);
+        timer = new CountDownTimer(0);
+        timeObj = CountDownTimer.parse(0);
 
     format(timeObj.minutes, timeObj.seconds);
     

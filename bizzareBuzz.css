@@ -22,35 +22,42 @@ body, html {
 H1 {
 	font-family: 'Rye', cursive;
 	text-align: center;
-	padding: 10px;
+	/*padding: 10px;*/
 	/*background-color: #000080;*/
 	color: white;
-	margin-bottom: 0px;
+	/*margin: 0px;*/
+	/*font-size: 20px;*/
 }
 
 H2 {
 	text-align: center;
 	padding: 10px;
 	color: white;
+	margin-bottom: 5px;
+	
 }
 
 H3 {
 	text-align: center;
-	margin: 10px;
-	padding: 10px;
+	/*margin: 10px;*/
+	/*padding: 10px;*/
 	color: white;
+	/*font-size: 25px;*/
 }
 
 H5 {
 	color: white;
 	text-align: right;
 	margin-right: 10px;
+	font-size: 15px;
+	position: absolute;
+  	bottom: 10px;
 }
 
 #startButton {
  	margin:auto;
   	display:block;
-  	font-size: 20px;
+  	font-size: 17px;
   	/*color: blue;
   	background-color: white;*/
 }
@@ -73,25 +80,25 @@ table {
   margin-right: 10px;
   padding: 10px;
   color: white;
-  background-color: rgb(0,0,128,0.7);
+  background-color: rgb(0,0,0,0.7);
   border-radius: 25px;
-  }
+    }
 
 .hintsDiv{
-	font-size: 18px;
+	font-size: 15px;
 	margin-right: 7px;
-	font-weight: 600;
+	font-weight: 550;
 	
 }
 
 .rightSideDiv {
-	  background-color: rgb(0,0,128,0.6);
+	  background-color: rgb(0,0,0,0.6);
 	  color: white;
 	  /*margin-right: 10px;*/
 }
 
 .leftSideDiv {
-	background-color: rgb(0,0,128,0.6);
+	background-color: rgb(0,0,0,0.6);
 	color: white;
 }
 
@@ -99,32 +106,32 @@ th{
   text-align: center;
   padding: 20px;
   color: white;
-  font-size: 20px;
-}
+  /*font-size: 20px;
+*/}
 
 td {
   text-align: center;
   padding: 20px;
   color: white;
-  font-size: 7;
+  /*font-size: 7;*/
 }
 .buyButton, .sellButton{
 	margin-left: 15px;
 }
 
 input[type=number]{
-    width: 100px;
+    width: 50px;
 } 
 
 .timerDivOuter {
 	text-align: center;
 	margin-top: 30px;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .timerDivInner {
 	text-align: center;
-	font-size: 70px;
+	font-size: 50px;
 }
 
 .row {

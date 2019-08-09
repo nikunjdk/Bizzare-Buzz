@@ -543,9 +543,9 @@ $("#S9").click(function() {
         });
 
 //Reload Function
-// window.onbeforeunload = function() {
-//         return "";
-//     }
+ window.onbeforeunload = function() {
+         return "";
+     }
 
 //Timer Function
     function CountDownTimer(duration, granularity) {

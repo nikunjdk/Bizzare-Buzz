@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://evergreensmallbusiness.com/wp-content/uploads/2017/11/iStock-544338034.jpg");
+  
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+H1 {
+	font-family: 'Rye', cursive;
+	text-align: center;
+	padding: 10px;
+	/*background-color: #000080;*/
+	color: white;
+	margin-bottom: 0px;
+}
+
+H2 {
+	text-align: center;
+	padding: 10px;
+	color: white;
+}
+
+H3 {
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	color: white;
+}
+
+H5 {
+	color: white;
+	text-align: right;
+	margin-right: 10px;
+}
+
+#startButton {
+ 	margin:auto;
+  	display:block;
+  	font-size: 20px;
+  	/*color: blue;
+  	background-color: white;*/
+}
+
+#startButtonDiv {
+	/*background-color: black;*/
+	/*margin: 5px;*/
+	padding: 5px;
+	margin: 10px;
+}
+
+.buyButton, .sellButton{
+	background-color: white;
+} 
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(0,0,128,0.7);
+  border-radius: 25px;
+  }
+
+.hintsDiv{
+	font-size: 18px;
+	margin-right: 7px;
+	font-weight: 600;
+	
+}
+
+.rightSideDiv {
+	  background-color: rgb(0,0,128,0.6);
+	  color: white;
+	  /*margin-right: 10px;*/
+}
+
+.leftSideDiv {
+	background-color: rgb(0,0,128,0.6);
+	color: white;
+}
+
+th{
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+td {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 7;
+}
+.buyButton, .sellButton{
+	margin-left: 15px;
+}
+
+input[type=number]{
+    width: 100px;
+} 
+
+.timerDivOuter {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 25px;
+}
+
+.timerDivInner {
+	text-align: center;
+	font-size: 70px;
+}
+
+.row {
+	margin: 10px;
+}

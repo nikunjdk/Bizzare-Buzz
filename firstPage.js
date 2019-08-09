@@ -1,7 +1,7 @@
  $("#submitButton").click(function() {
 	var submitInput = $("#submitText").val();
 	console.log(submitInput);
-	if (submitInput == 'nikunj123') {
+	if (submitInput == "bb135") {
 			pageRedirect();
 	}
 	else {

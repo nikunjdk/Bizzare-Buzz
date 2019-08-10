@@ -612,6 +612,8 @@ CountDownTimer.prototype.start = function() {
                 $("#mv8").text(mv8);
                 var mv9 = parseInt($("#mv9").text());
                 mv9 = 35800;
+                $("#mv9").text(mv9);
+                        
                 for(j=0;j<10;j++)
                 {
                     var sharesOwned = parseInt($(".sharesOwned").eq(j).text());
@@ -624,8 +626,7 @@ CountDownTimer.prototype.start = function() {
                 if (finalValue>200000) {
                     $("#finalValue").text(200000);
                 }
-
-                $("#mv9").text(mv9);
+                
                 $("#h1").text("EBITDA of ZEE are likely to rise by 5% Y-o-Y and 2.9% on Q-o-Q");
                 $("#h2").text("ITC's Q1 profits rose by 16.8%, revenue by 5.6%");
                 $("#h3").text("Gold Silver Ratio has been changing rapidly for the past 2 months");
@@ -673,6 +674,8 @@ CountDownTimer.prototype.start = function() {
                 $("#mv8").text(mv8);
                 var mv9 = parseInt($("#mv9").text());
                 mv9 = 35500;
+                $("#mv9").text(mv9);
+                        
                 for(j=0;j<10;j++)
                 {
                     var sharesOwned = parseInt($(".sharesOwned").eq(j).text());
@@ -686,7 +689,7 @@ CountDownTimer.prototype.start = function() {
                     $("#finalValue").text(200000);
                 }
 
-                $("#mv9").text(mv9);
+                
                 $("#h1").text("TCS overtakes RIL to become the most valued firm by m-cap");
                 $("#h2").text("Adani has taken over seven electronic companies whose return will be recieved in the long run");
                 $("#h3").text("CLSA, JM Financial, CITI and Jefferies have cut their 12 month price target on SBI");
@@ -734,6 +737,8 @@ CountDownTimer.prototype.start = function() {
                 $("#mv8").text(mv8);
                 var mv9 = parseInt($("#mv9").text());
                 mv9 = 35600;
+                $("#mv9").text(mv9);        
+                        
                 for(j=0;j<10;j++)
                 {
                     var sharesOwned = parseInt($(".sharesOwned").eq(j).text());
@@ -746,8 +751,7 @@ CountDownTimer.prototype.start = function() {
                 if (finalValue>200000) {
                     $("#finalValue").text(200000);
                 }
-
-                $("#mv9").text(mv9);
+                
                 $("#h1").text("TCS $100 mn clients bucket has not seen any major boom in the past one year");
                 $("#h2").text("Zee and Infosys are planning to have a buyback in the next one month");
                 $("#h3").text("The government is planning to pass strict rules against loan defaulters and also regarding depotation of the same");
@@ -792,7 +796,8 @@ CountDownTimer.prototype.start = function() {
                 $("#mv8").text(mv8);
                 var mv9 = parseInt($("#mv9").text());
                 mv9 = 33000;
-
+                $("#mv9").text(mv9);
+                               
             var i = 0;
             var totalValueOfShareOwned = 0;
 
@@ -814,7 +819,6 @@ CountDownTimer.prototype.start = function() {
             $("#finalValue").text(finalBalance);
             $(".buyButton").prop('disabled', true);
             $(".sellButton").prop('disabled', true);
-            console.log(finalBalance);
             $("H2").hide();
             $("#startButton").hide();
             $(".hintsDiv").hide();

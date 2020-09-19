@@ -543,9 +543,9 @@ $("#S9").click(function() {
         });
 
 //Reload Function
-// window.onbeforeunload = function() {
-//         return "";
-//     }
+ window.onbeforeunload = function() {
+         return "";
+     }
 
 //Timer Function
     function CountDownTimer(duration, granularity) {
@@ -612,6 +612,8 @@ CountDownTimer.prototype.start = function() {
                 $("#mv8").text(mv8);
                 var mv9 = parseInt($("#mv9").text());
                 mv9 = 35800;
+                $("#mv9").text(mv9);
+                        
                 for(j=0;j<10;j++)
                 {
                     var sharesOwned = parseInt($(".sharesOwned").eq(j).text());
@@ -624,8 +626,7 @@ CountDownTimer.prototype.start = function() {
                 if (finalValue>200000) {
                     $("#finalValue").text(200000);
                 }
-
-                $("#mv9").text(mv9);
+                
                 $("#h1").text("EBITDA of ZEE are likely to rise by 5% Y-o-Y and 2.9% on Q-o-Q");
                 $("#h2").text("ITC's Q1 profits rose by 16.8%, revenue by 5.6%");
                 $("#h3").text("Gold Silver Ratio has been changing rapidly for the past 2 months");
@@ -645,19 +646,19 @@ CountDownTimer.prototype.start = function() {
                 alert("Start Round "+i);
                 $(".round").text(i);
                 var mv0 = parseInt($("#mv0").text());
-                mv0 = 380;
+                mv0 = 350;
                 $("#mv0").text(mv0);
                 var mv1 = parseInt($("#mv1").text());
-                mv1 = 2180;
+                mv1 = 2250;
                 $("#mv1").text(mv1);
                 var mv2 = parseInt($("#mv2").text());
                 mv2 = 400;
                 $("#mv2").text(mv2);
                 var mv3 = parseInt($("#mv3").text());
-                mv3 = 400;
+                mv3 = 420;
                 $("#mv3").text(mv3);
                 var mv4 = parseInt($("#mv4").text());
-                mv4 = 300;
+                mv4 = 350;
                 $("#mv4").text(mv4);
                 var mv5 = parseInt($("#mv5").text());
                 mv5 = 850;
@@ -666,13 +667,15 @@ CountDownTimer.prototype.start = function() {
                 mv6 = 250;
                 $("#mv6").text(mv6);
                 var mv7 = parseInt($("#mv7").text());
-                mv7 = 220;
+                mv7 = 200;
                 $("#mv7").text(mv7);
                 var mv8 = parseInt($("#mv8").text());
                 mv8 = 360;
                 $("#mv8").text(mv8);
                 var mv9 = parseInt($("#mv9").text());
                 mv9 = 35500;
+                $("#mv9").text(mv9);
+                        
                 for(j=0;j<10;j++)
                 {
                     var sharesOwned = parseInt($(".sharesOwned").eq(j).text());
@@ -686,7 +689,7 @@ CountDownTimer.prototype.start = function() {
                     $("#finalValue").text(200000);
                 }
 
-                $("#mv9").text(mv9);
+                
                 $("#h1").text("TCS overtakes RIL to become the most valued firm by m-cap");
                 $("#h2").text("Adani has taken over seven electronic companies whose return will be recieved in the long run");
                 $("#h3").text("CLSA, JM Financial, CITI and Jefferies have cut their 12 month price target on SBI");
@@ -706,34 +709,36 @@ CountDownTimer.prototype.start = function() {
                 alert("Start Round "+i);
                 $(".round").text(i);
                 var mv0 = parseInt($("#mv0").text());
-                mv0 = 420;
+                mv0 = 400;
                 $("#mv0").text(mv0);
                 var mv1 = parseInt($("#mv1").text());
-                mv1 = 2250;
+                mv1 = 2300;
                 $("#mv1").text(mv1);
                 var mv2 = parseInt($("#mv2").text());
-                mv2 = 350;
+                mv2 = 300;
                 $("#mv2").text(mv2);
                 var mv3 = parseInt($("#mv3").text());
-                mv3 = 380;
+                mv3 = 450;
                 $("#mv3").text(mv3);
                 var mv4 = parseInt($("#mv4").text());
                 mv4 = 270;
                 $("#mv4").text(mv4);
                 var mv5 = parseInt($("#mv5").text());
-                mv5 = 900;
+                mv5 = 800;
                 $("#mv5").text(mv5);
                 var mv6 = parseInt($("#mv6").text());
-                mv6 = 290;
+                mv6 = 250;
                 $("#mv6").text(mv6);
                 var mv7 = parseInt($("#mv7").text());
                 mv7 = 300;
                 $("#mv7").text(mv7);
                 var mv8 = parseInt($("#mv8").text());
-                mv8 = 340;
+                mv8 = 300;
                 $("#mv8").text(mv8);
                 var mv9 = parseInt($("#mv9").text());
-                mv9 = 35600;
+                mv9 = 36500;
+                $("#mv9").text(mv9);        
+                        
                 for(j=0;j<10;j++)
                 {
                     var sharesOwned = parseInt($(".sharesOwned").eq(j).text());
@@ -746,8 +751,7 @@ CountDownTimer.prototype.start = function() {
                 if (finalValue>200000) {
                     $("#finalValue").text(200000);
                 }
-
-                $("#mv9").text(mv9);
+                
                 $("#h1").text("TCS $100 mn clients bucket has not seen any major boom in the past one year");
                 $("#h2").text("Zee and Infosys are planning to have a buyback in the next one month");
                 $("#h3").text("The government is planning to pass strict rules against loan defaulters and also regarding depotation of the same");
@@ -764,16 +768,16 @@ CountDownTimer.prototype.start = function() {
         {   
             $(".round").text(i);
                 var mv0 = parseInt($("#mv0").text());
-                mv0 = 470;
+                mv0 = 500;
                 $("#mv0").text(mv0);
                 var mv1 = parseInt($("#mv1").text());
-                mv1 = 2320;
+                mv1 = 2400;
                 $("#mv1").text(mv1);
                 var mv2 = parseInt($("#mv2").text());
-                mv2 = 300;
+                mv2 = 250;
                 $("#mv2").text(mv2);
                 var mv3 = parseInt($("#mv3").text());
-                mv3 = 480;
+                mv3 = 500;
                 $("#mv3").text(mv3);
                 var mv4 = parseInt($("#mv4").text());
                 mv4 = 350;
@@ -782,17 +786,18 @@ CountDownTimer.prototype.start = function() {
                 mv5 = 800;
                 $("#mv5").text(mv5);
                 var mv6 = parseInt($("#mv6").text());
-                mv6 = 200;
+                mv6 = 300;
                 $("#mv6").text(mv6);
                 var mv7 = parseInt($("#mv7").text());
                 mv7 = 200;
                 $("#mv7").text(mv7);
                 var mv8 = parseInt($("#mv8").text());
-                mv8 = 300;
+                mv8 = 350;
                 $("#mv8").text(mv8);
                 var mv9 = parseInt($("#mv9").text());
                 mv9 = 33000;
-
+                $("#mv9").text(mv9);
+                               
             var i = 0;
             var totalValueOfShareOwned = 0;
 
@@ -814,7 +819,6 @@ CountDownTimer.prototype.start = function() {
             $("#finalValue").text(finalBalance);
             $(".buyButton").prop('disabled', true);
             $(".sellButton").prop('disabled', true);
-            console.log(finalBalance);
             $("H2").hide();
             $("#startButton").hide();
             $(".hintsDiv").hide();

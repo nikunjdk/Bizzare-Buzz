@@ -1,37 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Rye&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rye&display=swap");
 .bg {
   /* The image used */
   background-image: url("https://evergreensmallbusiness.com/wp-content/uploads/2017/11/iStock-544338034.jpg");
-  
 
   /* Full height */
-  height: 100%;
+  /* height: 100%; */
 
   /* Center and scale the image nicely */
   background-position: fill;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
-  overflow: hidden;
-
+  /* overflow: hidden; */
 }
 
 H1 {
-	color: white;
-	text-align: center;
-	padding: 10px;
-	font-family: 'Rye', cursive;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: "Rye", cursive;
 }
 
 .rule {
-	color: white;
-	text-align: left;
-	padding: 10px;
-	background-color: rgb(0,0,128,0.6);
-	font-size: 20px;
-	font-weight: 600;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  background-color: rgb(0, 0, 128, 0.6);
+  font-size: 20px;
+  font-weight: 600;
 }
 
 #submitButton {
-	background-color: white;
-	margin-left: 10px;
+  background-color: white;
+  margin-left: 10px;
 }

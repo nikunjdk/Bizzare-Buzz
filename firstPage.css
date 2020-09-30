@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Rye&display=swap");
-.bg {
-  /* The image used */
-  background-image: url("https://evergreensmallbusiness.com/wp-content/uploads/2017/11/iStock-544338034.jpg");
-
-  /* Full height */
-  /* height: 100%; */
-
-  /* Center and scale the image nicely */
-  background-position: fill;
-  /* background-repeat: no-repeat; */
-  background-size: cover;
-  /* overflow: hidden; */
+*{
+	font-family: Montserrat;
+	transition: all 0.6s;
+	outline: none;
+	margin: 0;
+	box-sizing: border-box;
 }
-
+body{
+	 background-image: url("https://evergreensmallbusiness.com/wp-content/uploads/2017/11/iStock-544338034.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
 H1 {
   color: white;
   text-align: center;
@@ -26,10 +26,31 @@ H1 {
   padding: 10px;
   background-color: rgb(0, 0, 128, 0.6);
   font-size: 20px;
-  font-weight: 600;
+	text-align: justify;
 }
 
 #submitButton {
   background-color: white;
-  margin-left: 10px;
+	margin: 0 20px;
+  padding: 10px;
+	height: 50px;
+}
+#submitButton:hover{
+	background: #3ba0fc;
+	color: #fff;
+}
+input[type=text]{
+	padding: 5px;
+	border: none;
+	border-bottom:3px solid transparent;
+	height: 50px;
+}
+input[type=text]:focus,input[type=text]:active{
+	border-bottom:3px solid #3ba0fc
+}
+.input{
+	text-align: center;
+}
+H4{
+	padding-left: 15px;
 }

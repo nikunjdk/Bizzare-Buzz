@@ -1,35 +1,100 @@
-@import url("https://fonts.googleapis.com/css?family=Rye&display=swap");
-.bg {
-  /* The image used */
-  background-image: url("https://evergreensmallbusiness.com/wp-content/uploads/2017/11/iStock-544338034.jpg");
-
-  /* Full height */
-  /* height: 100%; */
-
-  /* Center and scale the image nicely */
-  background-position: fill;
-  /* background-repeat: no-repeat; */
-  background-size: cover;
-  /* overflow: hidden; */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
-
-H1 {
-  color: white;
+body
+{
+  padding:20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-card
+{
+  min-width: 80vw;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+.section1,.section2
+{
+min-width: 50%;
+min-height: 100%;
+}
+.section2{
+  background-color:#5F64F1;
+  color: wheat;
+  padding: 40px;
+}
+.section1
+{
+  background-color: white;
+  padding: 20px;
   text-align: center;
-  padding: 10px;
-  font-family: "Rye", cursive;
+  color: #232136;
 }
-
-.rule {
-  color: white;
-  text-align: left;
-  padding: 10px;
-  background-color: rgb(0, 0, 128, 0.6);
-  font-size: 20px;
+h2{
   font-weight: 600;
 }
+.important
+{
+  color: #5F64F1;
+}
 
-#submitButton {
+.rule
+{
+  color: white!important;
+  display: flex;
+  flex-flow: column;
+ align-items: center;
+ justify-content: center;
+}
+input
+{
+  display: block;
+  width: 60%;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+.btn
+{
+  margin-top: 10px;
+  padding: 10px 20px;
   background-color: white;
-  margin-left: 10px;
+  border: none;
+}
+@media screen and (max-width: 600px) 
+{
+
+  .main-card
+  {
+    flex-direction: column;
+    width: 100%;
+  }
+  .section1,.section2
+  {
+    width: 100%;
+    height: auto;
+  }
+  img{
+    width: 60%;
+  }
+  .section1
+  {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 950px) 
+{
+
+  .main-card
+  {
+    flex-direction: column;
+    width: 100vw;
+  }
 }

@@ -2,6 +2,21 @@
 $(".buyInput").val("");
 $(".sellInput").val("");
 
+$('.overlay').hide(); //Hiding for 1st Round
+
+
+$("#submitButton").click(function() {
+	var submitInput = $("#submitText").val();
+	console.log(submitInput);
+	if (submitInput == "bb135") {
+            $('.overlay').hide(); //If password is correct, overlay will be hiddena and user can see start round option and hints.
+            $("#submitText").val("");
+	}
+	else {
+		return;
+	}
+});
+
 $("#B0").click(function () {
     var i = 0;
     var buyInput = parseInt($(".buyInput").eq(i).val());
@@ -570,6 +585,7 @@ CountDownTimer.prototype.start = function () {
         if (diff > 0) {
             setTimeout(timer, that.granularity);
         } else {
+            $(".overlay").show(); //Overlay will be shown on screen asking for password and will hide the Hints and Start Round Button. 
             $(".buyButton").prop('disabled', true);
             $(".sellButton").prop('disabled', true);
             var i = parseInt($(".round").eq(0).text());

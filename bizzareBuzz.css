@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Rye&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 body,
 html {
   height: 100%;
@@ -16,6 +17,10 @@ html {
   /* background-repeat: no-repeat; */
   background-size: cover;
   /* overflow: hidden; */
+}
+
+#nav-bar {
+  color: #fff;
 }
 
 H1 {
@@ -64,6 +69,7 @@ H5 {
 .buyButton,
 .sellButton {
   background-color: white;
+  margin-left: 15px;
 }
 
 table {
@@ -107,10 +113,7 @@ td {
   color: white;
   font-size: 7;
 }
-.buyButton,
-.sellButton {
-  margin-left: 15px;
-}
+
 
 input[type="number"] {
   width: 100px;
@@ -118,15 +121,19 @@ input[type="number"] {
 
 .timerDivOuter {
   text-align: center;
-  margin-top: 30px;
   font-size: 25px;
+  margin-right: 7px;
 }
 
 .timerDivInner {
   text-align: center;
-  font-size: 70px;
+  font-size: 25px;
 }
 
 .row {
   margin: 10px;
+}
+
+.timer {
+  margin: 0;
 }

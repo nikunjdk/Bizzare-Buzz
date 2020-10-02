@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="bizzareBuzz.css">
+	
 	<title>Bizzare Buzz</title>
 	<link rel="icon"
 		href="https://upload.wikimedia.org/wikipedia/commons/e/e3/Logo_of_Ryan_International_School_India.jpg"
@@ -16,16 +17,30 @@
 
 <body>
 	<div class="bg">
-		<H1>CONFLUENCE 2019</H1>
-		<H1>BIZZARE BUZZ</H1>
+		<!-- <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="nav-bar" style="background-color: #e3f2fd;"> -->
+		
+		<nav class="navbar fixed-top" id="nav-bar" style="background-color: #000;">
+			<div class="navbar-header">
+				<div class="row timer">
+					<div class="timerDivOuter">Round <span class="round">1</span> ends in </div>
+					<strong><div id="time" class="timerDivInner"></div></strong>
+				</div>
+			</div>
+		</nav>
+
+		  
+		<div>
+			<H1 class="mt-5">CONFLUENCE 2020</H1>
+			<H1>BIZZARE BUZZ</H1>
+		</div>
 		<strong>
-			<H2>Round: <span class="round">1</span></H2>
+			<H2 class="mt-4">Round: <span class="round">1</span></H2>
 		</strong>
 
 		<!-- <div class="container"> -->
 		<div class="row">
 			<div class="col-lg-8 leftSideDiv">
-				<table class="table-sm">
+				<table class="table-sm mt-2">
 					<thead>
 						<tr>
 							<th scope="col">Name of the company</th>
@@ -42,9 +57,9 @@
 							<td class="marketValue" id="mv0">370</td>
 							<td class="sharesOwned">0</td>
 							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="buyButton btn" id="B0">Buy</button>
+							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B0">Buy</button>
 							</td>
-							<td><input class="sellInput" type="number"><button class="sellButton btn"
+							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
 									id="S0">Sell</button></td>
 						</tr>
 						<tr>
@@ -52,9 +67,9 @@
 							<td class="marketValue" id="mv1">2170</td>
 							<td class="sharesOwned">0</td>
 							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="buyButton btn" id="B1">Buy</button>
+							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B1">Buy</button>
 							</td>
-							<td><input class="sellInput" type="number"><button class="sellButton btn"
+							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
 									id="S1">Sell</button></td>
 						</tr>
 						<tr>
@@ -62,9 +77,9 @@
 							<td class="marketValue" id="mv2">350</td>
 							<td class="sharesOwned">0</td>
 							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="buyButton btn" id="B2">Buy</button>
+							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B2">Buy</button>
 							</td>
-							<td><input class="sellInput" type="number"><button class="sellButton btn"
+							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
 									id="S2">Sell</button></td>
 						</tr>
 						<tr>
@@ -72,9 +87,9 @@
 							<td class="marketValue" id="mv3">410</td>
 							<td class="sharesOwned">0</td>
 							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="buyButton btn" id="B3">Buy</button>
+							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B3">Buy</button>
 							</td>
-							<td><input class="sellInput" type="number"><button class="sellButton btn"
+							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
 									id="S3">Sell</button></td>
 						</tr>
 						<tr>
@@ -82,9 +97,9 @@
 							<td class="marketValue" id="mv4">315</td>
 							<td class="sharesOwned">0</td>
 							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="buyButton btn" id="B4">Buy</button>
+							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B4">Buy</button>
 							</td>
-							<td><input class="sellInput" type="number"><button class="sellButton btn"
+							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
 									id="S4">Sell</button></td>
 						</tr>
 						<tr>
@@ -92,9 +107,9 @@
 							<td class="marketValue" id="mv5">765</td>
 							<td class="sharesOwned">0</td>
 							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="buyButton btn" id="B5">Buy</button>
+							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B5">Buy</button>
 							</td>
-							<td><input class="sellInput" type="number"><button class="sellButton btn"
+							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
 									id="S5">Sell</button></td>
 						</tr>
 						<tr>
@@ -102,9 +117,9 @@
 							<td class="marketValue" id="mv6">270</td>
 							<td class="sharesOwned">0</td>
 							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="buyButton btn" id="B6">Buy</button>
+							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B6">Buy</button>
 							</td>
-							<td><input class="sellInput" type="number"><button class="sellButton btn"
+							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
 									id="S6">Sell</button></td>
 						</tr>
 						<tr>
@@ -112,9 +127,9 @@
 							<td class="marketValue" id="mv7">270</td>
 							<td class="sharesOwned">0</td>
 							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="buyButton btn" id="B7">Buy</button>
+							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B7">Buy</button>
 							</td>
-							<td><input class="sellInput" type="number"><button class="sellButton btn"
+							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
 									id="S7">Sell</button></td>
 						</tr>
 						<tr>
@@ -122,9 +137,9 @@
 							<td class="marketValue" id="mv8">330</td>
 							<td class="sharesOwned">0</td>
 							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="buyButton btn" id="B8">Buy</button>
+							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B8">Buy</button>
 							</td>
-							<td><input class="sellInput" type="number"><button class="sellButton btn"
+							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
 									id="S8">Sell</button></td>
 						</tr>
 						<tr>
@@ -132,9 +147,9 @@
 							<td class="marketValue" id="mv9">35000</td>
 							<td class="sharesOwned">0</td>
 							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="buyButton btn" id="B9">Buy</button>
+							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B9">Buy</button>
 							</td>
-							<td><input class="sellInput" type="number"><button class="sellButton btn"
+							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
 									id="S9">Sell</button></td>
 						</tr>
 					</tbody>
@@ -146,7 +161,7 @@
 							class="round">1</span></button></div>
 			</div>
 			<div class="col-lg-4 rightSideDiv">
-				<div class="hintsDiv"><strong>Hints-</strong>
+				<div class="hintsDiv mt-4"><strong>Hints-</strong>
 					<ol>
 						<li id="h1">TCS Q1 PAT may dip by 2.6%</li>
 						<li id="h2">ICICI expects Zee to report net profit at 383. crore up 13% Y-o-Y and 25.2% Q-o-Q
@@ -164,10 +179,6 @@
 						<li id="h10"></li>
 					</ol>
 				</div>
-				<div class="timerDivOuter">Round <span class="round">1</span> ends in</div>
-				<strong>
-					<div id="time" class="timerDivInner"></div>
-				</strong>
 			</div>
 		</div>
 		<!-- </div> -->

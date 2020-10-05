@@ -17,15 +17,14 @@
 
 <body>
 	<div class="overlay">
-		<input placeholder="Enter Password" autocomplete="off" id="submitText" type="text" name="Password"><button class="btn"
-			id="submitButton">Submit</button>
+		<p>Enter password before proceeding</p>
+		<input placeholder="Enter Password" autocomplete="off" id="submitText" type="text" name="Password">
 		<span></span>
+		<button class="btn" id="submitButton">Submit</button>
 	</div>
 
-	<div class="bg">
-		<!-- <nav class="navbar fixed-top navbar-expand-lg bg-dark" id="nav-bar" style="background-color: #e3f2fd;"> -->
-		
-		<nav class="navbar fixed-top" id="nav-bar" style="background-color: #000;">
+	<div class="bg">		
+		<nav class="navbar fixed-top shadow mb-5 rounded" id="nav-bar" style="background-color: #f5fcff;">
 			<div class="navbar-header">
 				<div class="row timer">
 					<div class="timerDivOuter">Round <span class="round">1</span> ends in </div>
@@ -33,28 +32,31 @@
 				</div>
 			</div>
 		</nav>
-
+        <hr>
 		  
-		<div>
-			<H1 class="mt-5">CONFLUENCE 2020</H1>
-			<H1>BIZZARE BUZZ</H1>
+		<div class="container" style="margin-top: 80px;">
+			<div class="header1">
+				<H1>CONFLUENCE 2020</H1>
+				<H2 mb-3 class="head-font">BIZZARE BUZZ</H2>
+			</div>
 		</div>
+		
 		<strong>
 			<H2 class="mt-4">Round: <span class="round">1</span></H2>
 		</strong>
 
-		<!-- <div class="container"> -->
-		<div class="row">
-			<div class="col-lg-8 leftSideDiv">
+		<div class="container-fluid">
+		<div class="row d-flex justify-content-around">
+			<div class="col-lg-7 leftSideDiv shadow mb-5 rounded">
 				<table class="table-sm mt-2">
 					<thead>
 						<tr>
-							<th scope="col">Name of the company</th>
-							<th scope="col">Market value of share</th>
-							<th scope="col">Shares Owned</th>
-							<th scope="col">Value Of Shares Owned</th>
-							<th scope="col">No. of shares to be bought</th>
-							<th scope="col">No. of shares to be sold</th>
+							<th scope="col" class="vib-blue">Name of the company</th>
+							<th scope="col" class="vib-blue">Market value of share</th>
+							<th scope="col" class="vib-blue">Shares Owned</th>
+							<th scope="col" class="vib-blue">Value Of Shares Owned</th>
+							<th scope="col" class="vib-blue">No. of shares to be bought</th>
+							<th scope="col" class="vib-blue">No. of shares to be sold</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -166,7 +168,7 @@
 				<div id="startButtonDiv"><button id="startButton" class="btn btn-primary">Start Round <span
 							class="round">1</span></button></div>
 			</div>
-			<div class="col-lg-4 rightSideDiv">
+			<div class="col-lg-4 rightSideDiv shadow mb-5 rounded">
 				<div class="hintsDiv mt-4"><strong>Hints-</strong>
 					<ol>
 						<li id="h1">TCS Q1 PAT may dip by 2.6%</li>
@@ -187,7 +189,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- </div> -->
+		</div>
 		<!-- <strong><p id="finalBalance"></p></strong> -->
 
 	</div>

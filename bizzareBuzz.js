@@ -5,16 +5,29 @@ $(".sellInput").val("");
 $('.overlay').hide(); //Hiding for 1st Round
 
 
-$("#submitButton").click(function() {
-	var submitInput = $("#submitText").val();
-	console.log(submitInput);
-	if (submitInput == "bb135") {
-            $('.overlay').hide(); //If password is correct, overlay will be hiddena and user can see start round option and hints.
-            $("#submitText").val("");
-	}
-	else {
-		return;
-	}
+$("#submitButton").click(function () {
+    var submitInput = $("#submitText").val();
+    var i = parseInt($(".round").eq(0).text());
+    if (submitInput == "bb1" && i - 1 == 1) {
+        $('.overlay').hide();
+        $("#submitText").val("");
+    }
+    else if (submitInput == "bb2" && i - 1 == 2) {
+        $('.overlay').hide();
+        $("#submitText").val("");
+    }
+    else if (submitInput == "bb3" && i - 1 == 3) {
+        $('.overlay').hide();
+        $("#submitText").val("");
+    }
+    else if (submitInput == "bb4" && i - 1 == 4) {
+        $('.overlay').hide();
+        $("#submitText").val("");
+    }
+    else {
+        $("#submitText").val("");
+        $("#invalidPasswordTest").text("Not valid!").show().fadeOut(2000);
+    }
 });
 
 $("#B0").click(function () {
@@ -585,17 +598,16 @@ CountDownTimer.prototype.start = function () {
         if (diff > 0) {
             setTimeout(timer, that.granularity);
         } else {
-            $(".overlay").show(); //Overlay will be shown on screen asking for password and will hide the Hints and Start Round Button. 
             $(".buyButton").prop('disabled', true);
             $(".sellButton").prop('disabled', true);
             var i = parseInt($(".round").eq(0).text());
             var j = 0;
             i = i + 1
             if (i <= 4) {
+                $(".overlay").show();
                 if (i - 1 == 1) {
                     diff = 0;
                     that.running = false;
-                    alert("Start Round " + i);
                     $(".round").text(i);
                     var mv0 = parseInt($("#mv0").text());
                     mv0 = 400;
@@ -655,7 +667,6 @@ CountDownTimer.prototype.start = function () {
                 if (i - 1 == 2) {
                     diff = 0;
                     that.running = false;
-                    alert("Start Round " + i);
                     $(".round").text(i);
                     var mv0 = parseInt($("#mv0").text());
                     mv0 = 350;
@@ -716,7 +727,6 @@ CountDownTimer.prototype.start = function () {
                 if (i - 1 == 3) {
                     diff = 0;
                     that.running = false;
-                    alert("Start Round " + i);
                     $(".round").text(i);
                     var mv0 = parseInt($("#mv0").text());
                     mv0 = 400;
@@ -865,8 +875,8 @@ window.onload = function () {
     $(".sellButton").prop('disabled', true);
 
     var display = document.querySelector('#time');
-    timer = new CountDownTimer(30);
-    timeObj = CountDownTimer.parse(30);
+    timer = new CountDownTimer(10);
+    timeObj = CountDownTimer.parse(10);
 
     format(timeObj.minutes, timeObj.seconds);
 

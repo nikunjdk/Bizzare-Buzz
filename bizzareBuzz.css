@@ -1,33 +1,51 @@
 @import url("https://fonts.googleapis.com/css?family=Rye&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 body,
 html {
   height: 100%;
 }
 
-.overlay{
+.overlay {
   position: fixed;
-  top:0;
-  left:0;
-  right:0;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  height:100%;
-  width:100%;
-  background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7) ),
-  url('img2.jpeg');
-  z-index: 10;
+  height: 100%;
+  width: 100%;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img2.jpeg"); */
+  background: #ffb347; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffcc33,
+    #ffb347
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffcc33,
+    #ffb347
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  z-index: 100;
   text-align: center;
   padding-top: 200px;
 }
 
+#invalidPasswordTest {
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  font-size: 30px;
+}
+
 #submitButton {
-  background-color: white;
-  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .bg {
   background-color: white;
-  
+
   background-position: fill;
   background-size: cover;
 }
@@ -37,8 +55,8 @@ html {
 }
 
 .header1 {
-  background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.6) ),
-  url('img2.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("img2.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -94,7 +112,7 @@ H5 {
 
 .buyButton,
 .sellButton {
-  background-color: #0ACF83;
+  background-color: #0acf83;
   margin-left: 15px;
   z-index: 10;
 }
@@ -109,7 +127,7 @@ table {
 }
 
 .vib-blue {
-  color: black
+  color: black;
 }
 
 .hintsDiv {
@@ -119,17 +137,33 @@ table {
 }
 
 .rightSideDiv {
-  background: #4CA1AF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #4ca1af; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #c4e0e5,
+    #4ca1af
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #c4e0e5,
+    #4ca1af
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: black;
   /*margin-right: 10px;*/
 }
 
 .leftSideDiv {
-  background: #ffb347;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ffb347; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ffcc33,
+    #ffb347
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ffcc33,
+    #ffb347
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: black;
 }
 
@@ -147,7 +181,6 @@ td {
   font-size: 7;
 }
 
-
 input[type="number"] {
   width: 75px;
 }
@@ -161,7 +194,7 @@ input[type="number"] {
 .timerDivInner {
   text-align: center;
   font-size: 22px;
-  color: #F24E1E;
+  color: #f24e1e;
 }
 
 .row {

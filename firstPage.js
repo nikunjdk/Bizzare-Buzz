@@ -1,16 +1,17 @@
- $("#submitButton").click(function() {
+$("#submitButton").click(function () {
 	var submitInput = $("#submitText").val();
 	console.log(submitInput);
 	if (submitInput == "bb135") {
-			pageRedirect();
+		pageRedirect();
 	}
 	else {
-		$( "span" ).text( "Not valid!" ).show().fadeOut( 2000 );
+		$("#submitText").val("");
+		$("#invalidPasswordTest").text("Not valid!").show().fadeOut(2000);
 	}
 });
 
-    function pageRedirect() {
+function pageRedirect() {
 
-        window.location.replace("bizzareBuzz.html");
+	window.location.replace("bizzareBuzz.html");
 
-    }      
+}      

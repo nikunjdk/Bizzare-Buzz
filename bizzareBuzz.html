@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="bizzareBuzz.css">
-	
+
 	<title>Bizzare Buzz</title>
 	<link rel="icon"
 		href="https://upload.wikimedia.org/wikipedia/commons/e/e3/Logo_of_Ryan_International_School_India.jpg"
@@ -19,176 +19,191 @@
 	<div class="overlay">
 		<p>Enter password before proceeding</p>
 		<input placeholder="Enter Password" autocomplete="off" id="submitText" type="text" name="Password">
-		<span></span>
-		<button class="btn" id="submitButton">Submit</button>
+		<div id="invalidPasswordTest"></div>
+		<button class="btn btn-primary" id="submitButton">Submit</button>
 	</div>
 
-	<div class="bg">		
+	<div class="bg">
 		<nav class="navbar fixed-top shadow mb-5 rounded" id="nav-bar" style="background-color: #f5fcff;">
 			<div class="navbar-header">
 				<div class="row timer">
 					<div class="timerDivOuter">Round <span class="round">1</span> ends in </div>
-					<strong><div id="time" class="timerDivInner"></div></strong>
+					<strong>
+						<div id="time" class="timerDivInner"></div>
+					</strong>
 				</div>
 			</div>
 		</nav>
-        <hr>
-		  
+		<hr>
+
 		<div class="container" style="margin-top: 80px;">
 			<div class="header1">
 				<H1>CONFLUENCE 2020</H1>
 				<H2 mb-3 class="head-font">BIZZARE BUZZ</H2>
 			</div>
 		</div>
-		
+
 		<strong>
 			<H2 class="mt-4">Round: <span class="round">1</span></H2>
 		</strong>
 
 		<div class="container-fluid">
-		<div class="row d-flex justify-content-around">
-			<div class="col-lg-7 leftSideDiv shadow mb-5 rounded">
-				<table class="table-sm mt-2">
-					<thead>
-						<tr>
-							<th scope="col" class="vib-blue">Name of the company</th>
-							<th scope="col" class="vib-blue">Market value of share</th>
-							<th scope="col" class="vib-blue">Shares Owned</th>
-							<th scope="col" class="vib-blue">Value Of Shares Owned</th>
-							<th scope="col" class="vib-blue">No. of shares to be bought</th>
-							<th scope="col" class="vib-blue">No. of shares to be sold</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">Adani</th>
-							<td class="marketValue" id="mv0">370</td>
-							<td class="sharesOwned">0</td>
-							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B0">Buy</button>
-							</td>
-							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
-									id="S0">Sell</button></td>
-						</tr>
-						<tr>
-							<th scope="row">TCS</th>
-							<td class="marketValue" id="mv1">2170</td>
-							<td class="sharesOwned">0</td>
-							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B1">Buy</button>
-							</td>
-							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
-									id="S1">Sell</button></td>
-						</tr>
-						<tr>
-							<th scope="row">ZEE Entertainment</th>
-							<td class="marketValue" id="mv2">350</td>
-							<td class="sharesOwned">0</td>
-							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B2">Buy</button>
-							</td>
-							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
-									id="S2">Sell</button></td>
-						</tr>
-						<tr>
-							<th scope="row">ICICI Bank</th>
-							<td class="marketValue" id="mv3">410</td>
-							<td class="sharesOwned">0</td>
-							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B3">Buy</button>
-							</td>
-							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
-									id="S3">Sell</button></td>
-						</tr>
-						<tr>
-							<th scope="row">SBI Bank</th>
-							<td class="marketValue" id="mv4">315</td>
-							<td class="sharesOwned">0</td>
-							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B4">Buy</button>
-							</td>
-							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
-									id="S4">Sell</button></td>
-						</tr>
-						<tr>
-							<th scope="row">Infosys</th>
-							<td class="marketValue" id="mv5">765</td>
-							<td class="sharesOwned">0</td>
-							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B5">Buy</button>
-							</td>
-							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
-									id="S5">Sell</button></td>
-						</tr>
-						<tr>
-							<th scope="row">Wipro</th>
-							<td class="marketValue" id="mv6">270</td>
-							<td class="sharesOwned">0</td>
-							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B6">Buy</button>
-							</td>
-							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
-									id="S6">Sell</button></td>
-						</tr>
-						<tr>
-							<th scope="row">ITC</th>
-							<td class="marketValue" id="mv7">270</td>
-							<td class="sharesOwned">0</td>
-							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B7">Buy</button>
-							</td>
-							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
-									id="S7">Sell</button></td>
-						</tr>
-						<tr>
-							<th scope="row">BPCL</th>
-							<td class="marketValue" id="mv8">330</td>
-							<td class="sharesOwned">0</td>
-							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B8">Buy</button>
-							</td>
-							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
-									id="S8">Sell</button></td>
-						</tr>
-						<tr>
-							<th scope="row">Gold</th>
-							<td class="marketValue" id="mv9">35000</td>
-							<td class="sharesOwned">0</td>
-							<td class="valueOfSharesOwned">0</td>
-							<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton" id="B9">Buy</button>
-							</td>
-							<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
-									id="S9">Sell</button></td>
-						</tr>
-					</tbody>
-				</table>
-				<strong>
-					<H3>Balance: <span id="finalValue">1000000</span>
-				</strong></H3>
-				<div id="startButtonDiv"><button id="startButton" class="btn btn-primary">Start Round <span
-							class="round">1</span></button></div>
-			</div>
-			<div class="col-lg-4 rightSideDiv shadow mb-5 rounded">
-				<div class="hintsDiv mt-4"><strong>Hints-</strong>
-					<ol>
-						<li id="h1">TCS Q1 PAT may dip by 2.6%</li>
-						<li id="h2">ICICI expects Zee to report net profit at 383. crore up 13% Y-o-Y and 25.2% Q-o-Q
-							basis</li>
-						<li id="h3">Finance Minister may announce something big in favour of banking system as financial
-							institutions investment (FII) seems to return back to India</li>
-						<li id="h4">BPCL's Q1 PAT may dip by 37.4%</li>
-						<li id="h5">Adani's Sale for financial year 2018-2019 rose up by 9.16%</li>
-						<li id="h6">Lack of foreign collaborations may create a problem of market standing for Wipro
-						</li>
-						<li id="h7">Sudden plunge of digital marketing in India has saved Infosys from a drastic loss
-						</li>
-						<li id="h8">Gold Prices may see major fluctuation due to currency war</li>
-						<li id="h9">Cigarette business of ITC showed a 6% Y-o-Y revenue growth</li>
-						<li id="h10"></li>
-					</ol>
+			<div class="row d-flex justify-content-around">
+				<div class="col-lg-7 leftSideDiv shadow mb-5 rounded">
+					<table class="table-sm mt-2">
+						<thead>
+							<tr>
+								<th scope="col" class="vib-blue">Name of the company</th>
+								<th scope="col" class="vib-blue">Market value of share</th>
+								<th scope="col" class="vib-blue">Shares Owned</th>
+								<th scope="col" class="vib-blue">Value Of Shares Owned</th>
+								<th scope="col" class="vib-blue">No. of shares to be bought</th>
+								<th scope="col" class="vib-blue">No. of shares to be sold</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Adani</th>
+								<td class="marketValue" id="mv0">370</td>
+								<td class="sharesOwned">0</td>
+								<td class="valueOfSharesOwned">0</td>
+								<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton"
+										id="B0">Buy</button>
+								</td>
+								<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
+										id="S0">Sell</button></td>
+							</tr>
+							<tr>
+								<th scope="row">TCS</th>
+								<td class="marketValue" id="mv1">2170</td>
+								<td class="sharesOwned">0</td>
+								<td class="valueOfSharesOwned">0</td>
+								<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton"
+										id="B1">Buy</button>
+								</td>
+								<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
+										id="S1">Sell</button></td>
+							</tr>
+							<tr>
+								<th scope="row">ZEE Entertainment</th>
+								<td class="marketValue" id="mv2">350</td>
+								<td class="sharesOwned">0</td>
+								<td class="valueOfSharesOwned">0</td>
+								<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton"
+										id="B2">Buy</button>
+								</td>
+								<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
+										id="S2">Sell</button></td>
+							</tr>
+							<tr>
+								<th scope="row">ICICI Bank</th>
+								<td class="marketValue" id="mv3">410</td>
+								<td class="sharesOwned">0</td>
+								<td class="valueOfSharesOwned">0</td>
+								<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton"
+										id="B3">Buy</button>
+								</td>
+								<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
+										id="S3">Sell</button></td>
+							</tr>
+							<tr>
+								<th scope="row">SBI Bank</th>
+								<td class="marketValue" id="mv4">315</td>
+								<td class="sharesOwned">0</td>
+								<td class="valueOfSharesOwned">0</td>
+								<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton"
+										id="B4">Buy</button>
+								</td>
+								<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
+										id="S4">Sell</button></td>
+							</tr>
+							<tr>
+								<th scope="row">Infosys</th>
+								<td class="marketValue" id="mv5">765</td>
+								<td class="sharesOwned">0</td>
+								<td class="valueOfSharesOwned">0</td>
+								<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton"
+										id="B5">Buy</button>
+								</td>
+								<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
+										id="S5">Sell</button></td>
+							</tr>
+							<tr>
+								<th scope="row">Wipro</th>
+								<td class="marketValue" id="mv6">270</td>
+								<td class="sharesOwned">0</td>
+								<td class="valueOfSharesOwned">0</td>
+								<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton"
+										id="B6">Buy</button>
+								</td>
+								<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
+										id="S6">Sell</button></td>
+							</tr>
+							<tr>
+								<th scope="row">ITC</th>
+								<td class="marketValue" id="mv7">270</td>
+								<td class="sharesOwned">0</td>
+								<td class="valueOfSharesOwned">0</td>
+								<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton"
+										id="B7">Buy</button>
+								</td>
+								<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
+										id="S7">Sell</button></td>
+							</tr>
+							<tr>
+								<th scope="row">BPCL</th>
+								<td class="marketValue" id="mv8">330</td>
+								<td class="sharesOwned">0</td>
+								<td class="valueOfSharesOwned">0</td>
+								<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton"
+										id="B8">Buy</button>
+								</td>
+								<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
+										id="S8">Sell</button></td>
+							</tr>
+							<tr>
+								<th scope="row">Gold</th>
+								<td class="marketValue" id="mv9">35000</td>
+								<td class="sharesOwned">0</td>
+								<td class="valueOfSharesOwned">0</td>
+								<td><input class="buyInput" type="number"><button class="m-1 btn btn-sm buyButton"
+										id="B9">Buy</button>
+								</td>
+								<td><input class="sellInput" type="number"><button class="m-1 btn btn-sm sellButton"
+										id="S9">Sell</button></td>
+							</tr>
+						</tbody>
+					</table>
+					<strong>
+						<H3>Balance: <span id="finalValue">1000000</span>
+					</strong></H3>
+					<div id="startButtonDiv"><button id="startButton" class="btn btn-primary">Start Round <span
+								class="round">1</span></button></div>
+				</div>
+				<div class="col-lg-4 rightSideDiv shadow mb-5 rounded">
+					<div class="hintsDiv mt-4"><strong>Hints-</strong>
+						<ol>
+							<li id="h1">TCS Q1 PAT may dip by 2.6%</li>
+							<li id="h2">ICICI expects Zee to report net profit at 383. crore up 13% Y-o-Y and 25.2%
+								Q-o-Q
+								basis</li>
+							<li id="h3">Finance Minister may announce something big in favour of banking system as
+								financial
+								institutions investment (FII) seems to return back to India</li>
+							<li id="h4">BPCL's Q1 PAT may dip by 37.4%</li>
+							<li id="h5">Adani's Sale for financial year 2018-2019 rose up by 9.16%</li>
+							<li id="h6">Lack of foreign collaborations may create a problem of market standing for Wipro
+							</li>
+							<li id="h7">Sudden plunge of digital marketing in India has saved Infosys from a drastic
+								loss
+							</li>
+							<li id="h8">Gold Prices may see major fluctuation due to currency war</li>
+							<li id="h9">Cigarette business of ITC showed a 6% Y-o-Y revenue growth</li>
+							<li id="h10"></li>
+						</ol>
+					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 		<!-- <strong><p id="finalBalance"></p></strong> -->
 

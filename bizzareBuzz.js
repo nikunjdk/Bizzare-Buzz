@@ -610,34 +610,34 @@ CountDownTimer.prototype.start = function () {
                     that.running = false;
                     $(".round").text(i);
                     var mv0 = parseInt($("#mv0").text());
-                    mv0 = 400;
+                    mv0 = 680;
                     $("#mv0").text(mv0);
                     var mv1 = parseInt($("#mv1").text());
-                    mv1 = 2200;
+                    mv1 = 330;
                     $("#mv1").text(mv1);
                     var mv2 = parseInt($("#mv2").text());
-                    mv2 = 380;
+                    mv2 = 1275;
                     $("#mv2").text(mv2);
                     var mv3 = parseInt($("#mv3").text());
-                    mv3 = 390;
+                    mv3 = 265;
                     $("#mv3").text(mv3);
                     var mv4 = parseInt($("#mv4").text());
-                    mv4 = 300;
+                    mv4 = 1830;
                     $("#mv4").text(mv4);
                     var mv5 = parseInt($("#mv5").text());
-                    mv5 = 800;
+                    mv5 = 1350;
                     $("#mv5").text(mv5);
                     var mv6 = parseInt($("#mv6").text());
-                    mv6 = 270;
+                    mv6 = 480;
                     $("#mv6").text(mv6);
                     var mv7 = parseInt($("#mv7").text());
-                    mv7 = 250;
+                    mv7 = 50;
                     $("#mv7").text(mv7);
                     var mv8 = parseInt($("#mv8").text());
-                    mv8 = 330;
+                    mv8 = 42500;
                     $("#mv8").text(mv8);
                     var mv9 = parseInt($("#mv9").text());
-                    mv9 = 35800;
+                    mv9 = 4500;
                     $("#mv9").text(mv9);
 
                     for (j = 0; j < 10; j++) {
@@ -652,16 +652,16 @@ CountDownTimer.prototype.start = function () {
                         $("#finalValue").text(200000);
                     }
 
-                    $("#h1").text("EBITDA of ZEE are likely to rise by 5% Y-o-Y and 2.9% on Q-o-Q");
-                    $("#h2").text("ITC's Q1 profits rose by 16.8%, revenue by 5.6%");
-                    $("#h3").text("Gold Silver Ratio has been changing rapidly for the past 2 months");
-                    $("#h4").text("Adani may face a huge fluctuation in his share value due to the need of dissolution of ownership share last year");
-                    $("#h5").text("Director and CEO of Wipro may sacrifice their shares to attract more people");
-                    $("#h6").text("BPCL's March '19 quaterly net profit reported of 3124.91 crores up by 16.8% from 2673.85 crores in March '18");
-                    $("#h7").text("ICICI Banks posted a profit of 1908 crores in June quarter over lower provisioning and healthy NII growth");
-                    $("#h8").text("There may be a whooping jump in SBI's profit on Q-o-Q basis inspite of the penalty imposed by RBI");
-                    $("#h9").text("Infosys has alloted shares worth 5 crores to its employees");
-                    $("#h10").text("TCS may report Q2 profit at 14000 crores");
+                    $("#h1").text("Infosys Q4 PAT may dip 11.1% Q-o-Q.");
+                    $("#h2").text("Reliance Jio investigating claims of alleged data breach.");
+                    $("#h3").text("ICE Brent futures prices were boosted by positive news on the US - China trade talks. Call on OPEC crude in 2020 is estimated at 28.9M bps, 1M bpd lower than current production.");
+                    $("#h4").text("Brokerages bullish on HDFC Bank post Q3 results.");
+                    $("#h5").text("Gold: Silver ratio in rose to 90:1.");
+                    $("#h6").text("VI to pay AGR dues to DoT.");
+                    $("#h7").text("Amazon expects an upsurge in its net profit due to the proposed deal with Yatra.com in the hospitality sector.");
+                    $("#h8").text("zee ltd to see a marginal increase in Q4 Y-o-Y.");
+                    $("#h9").text("Google may suffer losses amounting to $44 billion globally in ad revenue.");
+                    $("#h10").text("");
                 }
 
                 if (i - 1 == 2) {
@@ -669,34 +669,34 @@ CountDownTimer.prototype.start = function () {
                     that.running = false;
                     $(".round").text(i);
                     var mv0 = parseInt($("#mv0").text());
-                    mv0 = 350;
+                    mv0 = 730;
                     $("#mv0").text(mv0);
                     var mv1 = parseInt($("#mv1").text());
-                    mv1 = 2250;
+                    mv1 = 320;
                     $("#mv1").text(mv1);
                     var mv2 = parseInt($("#mv2").text());
-                    mv2 = 400;
+                    mv2 = 1230;
                     $("#mv2").text(mv2);
                     var mv3 = parseInt($("#mv3").text());
-                    mv3 = 420;
+                    mv3 = 270;
                     $("#mv3").text(mv3);
                     var mv4 = parseInt($("#mv4").text());
-                    mv4 = 350;
+                    mv4 = 1650;
                     $("#mv4").text(mv4);
                     var mv5 = parseInt($("#mv5").text());
-                    mv5 = 850;
+                    mv5 = 1375;
                     $("#mv5").text(mv5);
                     var mv6 = parseInt($("#mv6").text());
-                    mv6 = 250;
+                    mv6 = 480;
                     $("#mv6").text(mv6);
                     var mv7 = parseInt($("#mv7").text());
-                    mv7 = 200;
+                    mv7 = 40;
                     $("#mv7").text(mv7);
                     var mv8 = parseInt($("#mv8").text());
-                    mv8 = 360;
+                    mv8 = 45000;
                     $("#mv8").text(mv8);
                     var mv9 = parseInt($("#mv9").text());
-                    mv9 = 35500;
+                    mv9 = 3500;
                     $("#mv9").text(mv9);
 
                     for (j = 0; j < 10; j++) {
@@ -712,15 +712,15 @@ CountDownTimer.prototype.start = function () {
                     }
 
 
-                    $("#h1").text("TCS overtakes RIL to become the most valued firm by m-cap");
-                    $("#h2").text("Adani has taken over seven electronic companies whose return will be recieved in the long run");
-                    $("#h3").text("CLSA, JM Financial, CITI and Jefferies have cut their 12 month price target on SBI");
-                    $("#h4").text("BPCL, IOC, HPCL have decided to set up close to 80000 fuel retail outlets as a part of their biggest ever expansion of the fuel retail network");
-                    $("#h5").text("Wipro may recieve benefits due to sky rocketing investments in previous year");
-                    $("#h6").text("Infosys lifted revenue forcast from 8.5% to 10%");
-                    $("#h7").text("Morgan Stanley say except FMCG and EBIT all business segments have missed their estimates");
-                    $("#h8").text("ZEE promoters to sell 11% stakes to Invesco Oppenheimer Fund");
-                    $("#h9").text("");
+                    $("#h1").text("Infosys retains position in top10 IT firms.");
+                    $("#h2").text("Facebook buys 9.99% stake in jio.");
+                    $("#h3").text("Demand for oil falls largely due to coronavirus pandemic. WTI & Brent oil drops to 21-year low.");
+                    $("#h4").text("HDFC Bank surge up to 21% post Q4 biz update amid Covid-19 woes.");
+                    $("#h5").text("70% of banking sector debt affected by corona virus impact.");
+                    $("#h6").text("Silver might lose its importance as a safe asset.");
+                    $("#h7").text("Google may eye a 5% stake in VI.");
+                    $("#h8").text("Amazon pledges $2 billion venture capital fund to invest in clean energy.");
+                    $("#h9").text("ICICI Direct expects Zee Ltd.'s net profit to decrease by 55.5% Y-o-Y");
                     $("#h10").text("");
                 }
 
@@ -729,34 +729,34 @@ CountDownTimer.prototype.start = function () {
                     that.running = false;
                     $(".round").text(i);
                     var mv0 = parseInt($("#mv0").text());
-                    mv0 = 400;
+                    mv0 = 690;
                     $("#mv0").text(mv0);
                     var mv1 = parseInt($("#mv1").text());
-                    mv1 = 2300;
+                    mv1 = 200;
                     $("#mv1").text(mv1);
                     var mv2 = parseInt($("#mv2").text());
-                    mv2 = 300;
+                    mv2 = 950;
                     $("#mv2").text(mv2);
                     var mv3 = parseInt($("#mv3").text());
-                    mv3 = 450;
+                    mv3 = 140;
                     $("#mv3").text(mv3);
                     var mv4 = parseInt($("#mv4").text());
-                    mv4 = 270;
+                    mv4 = 1700;
                     $("#mv4").text(mv4);
                     var mv5 = parseInt($("#mv5").text());
-                    mv5 = 800;
+                    mv5 = 1380;
                     $("#mv5").text(mv5);
                     var mv6 = parseInt($("#mv6").text());
-                    mv6 = 250;
+                    mv6 = 510;
                     $("#mv6").text(mv6);
                     var mv7 = parseInt($("#mv7").text());
-                    mv7 = 300;
+                    mv7 = 55;
                     $("#mv7").text(mv7);
                     var mv8 = parseInt($("#mv8").text());
-                    mv8 = 300;
+                    mv8 = 45000;
                     $("#mv8").text(mv8);
                     var mv9 = parseInt($("#mv9").text());
-                    mv9 = 36500;
+                    mv9 = 2300;
                     $("#mv9").text(mv9);
 
                     for (j = 0; j < 10; j++) {
@@ -771,49 +771,49 @@ CountDownTimer.prototype.start = function () {
                         $("#finalValue").text(200000);
                     }
 
-                    $("#h1").text("TCS $100 mn clients bucket has not seen any major boom in the past one year");
-                    $("#h2").text("Zee and Infosys are planning to have a buyback in the next one month");
-                    $("#h3").text("The government is planning to pass strict rules against loan defaulters and also regarding depotation of the same");
-                    $("#h4").text("Wipro has touched its peak expectations in June '19 itself");
-                    $("#h5").text("There has been an easing demand for gold in the past 2 months");
-                    $("#h6").text("Diversified conglumarate reported a 12.69% rise in ITC's consolidated net profit");
-                    $("#h7").text("");
-                    $("#h8").text("");
-                    $("#h9").text("");
+                    $("#h1").text("Infosys acquires Guidevision & strikes a long term partnership with Lanxess.");
+                    $("#h2").text("Jio introduces postpaid plans with Prime, Hotstar  subscription.");
+                    $("#h3").text("Oil demand might increase as worldwide lockdowns come to ease.");
+                    $("#h4").text("US law firm files class action suit against HDFC Bank for misleading claims.");
+                    $("#h5").text("SBI reported an 81% YoY jump in net profit for Q1 FY21.");
+                    $("#h6").text("MCX gets SEBI approval to launch silver mini options.");
+                    $("#h7").text("Verizon, amazon may invest $4billion in VI.");
+                    $("#h8").text("Google working on tools to improve user privacy in digital advertising.");
+                    $("#h9").text("Revenues in media sector rises, as they air new shows and episodes.");
                     $("#h10").text("");
                 }
             }
             else {
                 $(".round").text(i);
                 var mv0 = parseInt($("#mv0").text());
-                mv0 = 500;
+                mv0 = 800;
                 $("#mv0").text(mv0);
                 var mv1 = parseInt($("#mv1").text());
-                mv1 = 2400;
+                mv1 = 400;
                 $("#mv1").text(mv1);
                 var mv2 = parseInt($("#mv2").text());
-                mv2 = 250;
+                mv2 = 1020;
                 $("#mv2").text(mv2);
                 var mv3 = parseInt($("#mv3").text());
-                mv3 = 500;
+                mv3 = 200;
                 $("#mv3").text(mv3);
                 var mv4 = parseInt($("#mv4").text());
-                mv4 = 350;
+                mv4 = 1800;
                 $("#mv4").text(mv4);
                 var mv5 = parseInt($("#mv5").text());
-                mv5 = 800;
+                mv5 = 1400;
                 $("#mv5").text(mv5);
                 var mv6 = parseInt($("#mv6").text());
-                mv6 = 300;
+                mv6 = 520;
                 $("#mv6").text(mv6);
                 var mv7 = parseInt($("#mv7").text());
-                mv7 = 200;
+                mv7 = 75;
                 $("#mv7").text(mv7);
                 var mv8 = parseInt($("#mv8").text());
-                mv8 = 350;
+                mv8 = 43000;
                 $("#mv8").text(mv8);
                 var mv9 = parseInt($("#mv9").text());
-                mv9 = 33000;
+                mv9 = 4000;
                 $("#mv9").text(mv9);
 
                 var i = 0;
@@ -875,8 +875,8 @@ window.onload = function () {
     $(".sellButton").prop('disabled', true);
 
     var display = document.querySelector('#time');
-    timer = new CountDownTimer(10);
-    timeObj = CountDownTimer.parse(10);
+    timer = new CountDownTimer(480);
+    timeObj = CountDownTimer.parse(480);
 
     format(timeObj.minutes, timeObj.seconds);
 

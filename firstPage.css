@@ -3,15 +3,18 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-body {
+/* body {
   padding: 20px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .main-card {
+  /* padding: 0px 40px; */
+  /* padding-top: 2px; */
+  padding-left: 40px;
   min-width: 80vw;
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -86,4 +89,19 @@ input {
     flex-direction: column;
     width: 100vw;
   }
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  margin-bottom: 0px;
+  height: 30px;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer h7 {
+  color: white;
 }

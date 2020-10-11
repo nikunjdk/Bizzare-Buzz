@@ -43,13 +43,19 @@ $("#B0").click(function () {
 
     if (finalValue >= valueOfShareBought) {
         sharesOwned = sharesOwned + buyInput;
-        finalValue = finalValue - valueOfShareBought;
-        valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
+        if(sharesOwned < 0) {
+            alert("Insufficient Shares!!!");
+            $(".buyInput").eq(i).val("");
+        }
+        else {
+            finalValue = finalValue - valueOfShareBought;
+            valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".buyInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".buyInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Balance!!!");
@@ -71,12 +77,18 @@ $("#S0").click(function () {
     if (sharesOwned >= sellInput) {
         sharesOwned = sharesOwned - sellInput;
         finalValue = finalValue + valueOfShareSold;
-        valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
+        if(finalValue < 0) {
+            alert("Insufficient Balance!!!");
+            $(".sellInput").eq(i).val("");
+        }
+        else {
+            valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".sellInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".sellInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Shares!!!");
@@ -97,13 +109,19 @@ $("#B1").click(function () {
 
     if (finalValue >= valueOfShareBought) {
         sharesOwned = sharesOwned + buyInput;
-        finalValue = finalValue - valueOfShareBought;
-        valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
+        if(sharesOwned < 0) {
+            alert("Insufficient Shares!!!");
+            $(".buyInput").eq(i).val("");
+        }
+        else {
+            finalValue = finalValue - valueOfShareBought;
+            valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".buyInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".buyInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Balance!!!");
@@ -125,12 +143,18 @@ $("#S1").click(function () {
     if (sharesOwned >= sellInput) {
         sharesOwned = sharesOwned - sellInput;
         finalValue = finalValue + valueOfShareSold;
-        valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
+        if(finalValue < 0) {
+            alert("Insufficient Balance!!!");
+            $(".sellInput").eq(i).val("");
+        }
+        else {
+            valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".sellInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".sellInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Shares!!!");
@@ -151,13 +175,19 @@ $("#B2").click(function () {
 
     if (finalValue >= valueOfShareBought) {
         sharesOwned = sharesOwned + buyInput;
-        finalValue = finalValue - valueOfShareBought;
-        valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
+        if(sharesOwned < 0) {
+            alert("Insufficient Shares!!!");
+            $(".buyInput").eq(i).val("");
+        }
+        else {
+            finalValue = finalValue - valueOfShareBought;
+            valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".buyInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".buyInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Balance!!!");
@@ -179,12 +209,18 @@ $("#S2").click(function () {
     if (sharesOwned >= sellInput) {
         sharesOwned = sharesOwned - sellInput;
         finalValue = finalValue + valueOfShareSold;
-        valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
+        if(finalValue < 0) {
+            alert("Insufficient Shares!!!");
+            $(".sellInput").eq(i).val("");
+        }
+        else {
+            valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".sellInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".sellInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Shares!!!");
@@ -205,13 +241,19 @@ $("#B3").click(function () {
 
     if (finalValue >= valueOfShareBought) {
         sharesOwned = sharesOwned + buyInput;
-        finalValue = finalValue - valueOfShareBought;
-        valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
+        if(sharesOwned < 0) {
+            alert("Insufficient Shares!!!");
+            $(".buyInput").eq(i).val("");
+        }
+        else {
+            finalValue = finalValue - valueOfShareBought;
+            valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".buyInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".buyInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Balance!!!");
@@ -233,12 +275,18 @@ $("#S3").click(function () {
     if (sharesOwned >= sellInput) {
         sharesOwned = sharesOwned - sellInput;
         finalValue = finalValue + valueOfShareSold;
-        valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
+        if(finalValue < 0) {
+            alert("Insufficient Balance!!!");
+            $(".sellInput").eq(i).val("");
+        }
+        else {
+            valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".sellInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".sellInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Shares!!!");
@@ -259,13 +307,19 @@ $("#B4").click(function () {
 
     if (finalValue >= valueOfShareBought) {
         sharesOwned = sharesOwned + buyInput;
-        finalValue = finalValue - valueOfShareBought;
-        valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
+        if(sharesOwned < 0) {
+            alert("Insufficient Shares!!!");
+            $(".buyInput").eq(i).val("");
+        }
+        else {
+            finalValue = finalValue - valueOfShareBought;
+            valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".buyInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".buyInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Balance!!!");
@@ -287,12 +341,18 @@ $("#S4").click(function () {
     if (sharesOwned >= sellInput) {
         sharesOwned = sharesOwned - sellInput;
         finalValue = finalValue + valueOfShareSold;
-        valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
+        if(finalValue < 0) {
+            alert("Insufficient Balance!!!");
+            $(".sellInput").eq(i).val("");
+        }
+        else {
+            valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".sellInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".sellInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Shares!!!");
@@ -313,13 +373,19 @@ $("#B5").click(function () {
 
     if (finalValue >= valueOfShareBought) {
         sharesOwned = sharesOwned + buyInput;
-        finalValue = finalValue - valueOfShareBought;
-        valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
+        if(sharesOwned < 0) {
+            alert("Insufficient Shares!!!");
+            $(".buyInput").eq(i).val("");
+        }
+        else {
+            finalValue = finalValue - valueOfShareBought;
+            valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".buyInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".buyInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Balance!!!");
@@ -341,12 +407,18 @@ $("#S5").click(function () {
     if (sharesOwned >= sellInput) {
         sharesOwned = sharesOwned - sellInput;
         finalValue = finalValue + valueOfShareSold;
-        valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
+        if(finalValue < 0) {
+            alert("Insufficient Balance!!!");
+            $(".sellInput").eq(i).val("");
+        }
+        else {
+            valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".sellInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".sellInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Shares!!!");
@@ -367,13 +439,19 @@ $("#B6").click(function () {
 
     if (finalValue >= valueOfShareBought) {
         sharesOwned = sharesOwned + buyInput;
-        finalValue = finalValue - valueOfShareBought;
-        valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
+        if(sharesOwned < 0) {
+            alert("Insufficient Shares!!!");
+            $(".buyInput").eq(i).val("");
+        }
+        else {
+            finalValue = finalValue - valueOfShareBought;
+            valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".buyInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".buyInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Balance!!!");
@@ -395,12 +473,18 @@ $("#S6").click(function () {
     if (sharesOwned >= sellInput) {
         sharesOwned = sharesOwned - sellInput;
         finalValue = finalValue + valueOfShareSold;
-        valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
+        if(finalValue < 0) {
+            alert("Insufficient Balance!!!");
+            $(".sellInput").eq(i).val("");
+        }
+        else {
+            valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".sellInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".sellInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Shares!!!");
@@ -421,13 +505,19 @@ $("#B7").click(function () {
 
     if (finalValue >= valueOfShareBought) {
         sharesOwned = sharesOwned + buyInput;
-        finalValue = finalValue - valueOfShareBought;
-        valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
+        if(sharesOwned < 0) {
+            alert("Insufficient Shares!!!");
+            $(".buyInput").eq(i).val("");
+        }
+        else {
+            finalValue = finalValue - valueOfShareBought;
+            valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".buyInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".buyInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Balance!!!");
@@ -449,12 +539,18 @@ $("#S7").click(function () {
     if (sharesOwned >= sellInput) {
         sharesOwned = sharesOwned - sellInput;
         finalValue = finalValue + valueOfShareSold;
-        valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
+        if(finalValue < 0) {
+            alert("Insufficient Balance!!!");
+            $(".sellInput").eq(i).val("");
+        }
+        else {
+            valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".sellInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".sellInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Shares!!!");
@@ -475,13 +571,19 @@ $("#B8").click(function () {
 
     if (finalValue >= valueOfShareBought) {
         sharesOwned = sharesOwned + buyInput;
-        finalValue = finalValue - valueOfShareBought;
-        valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
+        if(sharesOwned < 0) {
+            alert("Insufficient Shares!!!");
+            $(".buyInput").eq(i).val("");
+        }
+        else {
+            finalValue = finalValue - valueOfShareBought;
+            valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".buyInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".buyInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Balance!!!");
@@ -503,12 +605,18 @@ $("#S8").click(function () {
     if (sharesOwned >= sellInput) {
         sharesOwned = sharesOwned - sellInput;
         finalValue = finalValue + valueOfShareSold;
-        valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
+        if(finalValue < 0) {
+            alert("Insufficient Balance!!!");
+            $(".sellInput").eq(i).val("");
+        }
+        else {
+            valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".sellInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".sellInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Shares!!!");
@@ -529,13 +637,19 @@ $("#B9").click(function () {
 
     if (finalValue >= valueOfShareBought) {
         sharesOwned = sharesOwned + buyInput;
-        finalValue = finalValue - valueOfShareBought;
-        valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
+        if(sharesOwned < 0) {
+            alert("Insufficient Shares!!!");
+            $(".buyInput").eq(i).val("");
+        }
+        else {
+            finalValue = finalValue - valueOfShareBought;
+            valueOfShareOwned = valueOfShareOwned + valueOfShareBought;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".buyInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".buyInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Balance!!!");
@@ -557,12 +671,18 @@ $("#S9").click(function () {
     if (sharesOwned >= sellInput) {
         sharesOwned = sharesOwned - sellInput;
         finalValue = finalValue + valueOfShareSold;
-        valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
+        if(finalValue < 0) {
+            alert("Insufficient Balance!!!");
+            $(".sellInput").eq(i).val("");
+        }
+        else {
+            valueOfShareOwned = valueOfShareOwned - valueOfShareSold;
 
-        $(".sharesOwned").eq(i).text(sharesOwned);
-        $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
-        $("#finalValue").text(finalValue);
-        $(".sellInput").eq(i).val("");
+            $(".sharesOwned").eq(i).text(sharesOwned);
+            $(".valueOfSharesOwned").eq(i).text(valueOfShareOwned);
+            $("#finalValue").text(finalValue);
+            $(".sellInput").eq(i).val("");
+        }
     }
     else {
         alert("Insufficient Shares!!!");

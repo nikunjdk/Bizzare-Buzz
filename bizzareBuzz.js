@@ -653,7 +653,7 @@ CountDownTimer.prototype.start = function () {
                     }
 
                     $("#h1").text("Infosys Q4 PAT may dip 11.1% Q-o-Q.");
-                    $("#h2").text("Reliance Jio investigating claims of alleged data breach.");
+                    $("#h2").text("Airtel investigating claims of alleged data breach.");
                     $("#h3").text("ICE Brent futures prices were boosted by positive news on the US - China trade talks. Call on OPEC crude in 2020 is estimated at 28.9M bps, 1M bpd lower than current production.");
                     $("#h4").text("Brokerages bullish on HDFC Bank post Q3 results.");
                     $("#h5").text("Gold: Silver ratio in rose to 90:1.");
@@ -713,7 +713,7 @@ CountDownTimer.prototype.start = function () {
 
 
                     $("#h1").text("Infosys retains position in top10 IT firms.");
-                    $("#h2").text("Facebook buys 9.99% stake in jio.");
+                    $("#h2").text("Facebook buys 9.99% stake in Airtel.");
                     $("#h3").text("Demand for oil falls largely due to coronavirus pandemic. WTI & Brent oil drops to 21-year low.");
                     $("#h4").text("HDFC Bank surge up to 21% post Q4 biz update amid Covid-19 woes.");
                     $("#h5").text("70% of banking sector debt affected by corona virus impact.");
@@ -772,7 +772,7 @@ CountDownTimer.prototype.start = function () {
                     }
 
                     $("#h1").text("Infosys acquires Guidevision & strikes a long term partnership with Lanxess.");
-                    $("#h2").text("Jio introduces postpaid plans with Prime, Hotstar  subscription.");
+                    $("#h2").text("Airtel introduces postpaid plans with Prime, Hotstar  subscription.");
                     $("#h3").text("Oil demand might increase as worldwide lockdowns come to ease.");
                     $("#h4").text("US law firm files class action suit against HDFC Bank for misleading claims.");
                     $("#h5").text("SBI reported an 81% YoY jump in net profit for Q1 FY21.");

@@ -997,8 +997,8 @@ window.onload = function () {
     $(".sellButton").prop('disabled', true);
 
     var display = document.querySelector('#time');
-    timer = new CountDownTimer(5);
-    timeObj = CountDownTimer.parse(5);
+    timer = new CountDownTimer(480);
+    timeObj = CountDownTimer.parse(480);
 
     format(timeObj.minutes, timeObj.seconds);
 

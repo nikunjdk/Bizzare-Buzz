@@ -12,21 +12,17 @@ $("#submitButton").click(function () {
         $('.overlay').hide();
         $("#submitText").val("");
     }
-    else if (submitInput == "bb2" && i - 1 == 2) {
+    else if (submitInput == "stock" && i - 1 == 2) {
         $('.overlay').hide();
         $("#submitText").val("");
     }
-    else if (submitInput == "bb3" && i - 1 == 3) {
-        $('.overlay').hide();
-        $("#submitText").val("");
-    }
-    else if (submitInput == "bb4" && i - 1 == 4) {
+    else if (submitInput == "market" && i - 1 == 3) {
         $('.overlay').hide();
         $("#submitText").val("");
     }
     else {
         $("#submitText").val("");
-        $("#invalidPasswordTest").text("Not valid!").show().fadeOut(2000);
+		$("#invalidPasswordTest").text("NOT VALID!").show().fadeOut(2000);
     }
 });
 
@@ -748,7 +744,7 @@ CountDownTimer.prototype.start = function () {
                     mv5 = 1350;
                     $("#mv5").text(mv5);
                     var mv6 = parseInt($("#mv6").text());
-                    mv6 = 480;
+                    mv6 = 460;
                     $("#mv6").text(mv6);
                     var mv7 = parseInt($("#mv7").text());
                     mv7 = 50;
@@ -773,15 +769,17 @@ CountDownTimer.prototype.start = function () {
                     }
 
                     $("#h1").text("Infosys Q4 PAT may dip 11.1% Q-o-Q.");
-                    $("#h2").text("Airtel investigating claims of alleged data breach.");
+                    $("#h2").text("SBI to launch OTP based cash withdrawals at all its ATMs.");
                     $("#h3").text("ICE Brent futures prices were boosted by positive news on the US - China trade talks. Call on OPEC crude in 2020 is estimated at 28.9M bps, 1M bpd lower than current production.");
                     $("#h4").text("Brokerages bullish on HDFC Bank post Q3 results.");
                     $("#h5").text("Gold: Silver ratio in rose to 90:1.");
-                    $("#h6").text("VI to pay AGR dues to DoT.");
+                    $("#h6").text("VI and Bharti Airtel to pay AGR dues to DoT.");
                     $("#h7").text("Amazon expects an upsurge in its net profit due to the proposed deal with Yatra.com in the hospitality sector.");
-                    $("#h8").text("zee ltd to see a marginal increase in Q4 Y-o-Y.");
+                    $("#h8").text("ZEE ltd to see a marginal increase in Q4 Y-o-Y.");
                     $("#h9").text("Google may suffer losses amounting to $44 billion globally in ad revenue.");
-                    $("#h10").text("");
+                    $("#h10").text("DGFT blacklists Bharti Airtel following non fullfillment of export obligations");
+
+                    $("#invalidPasswordTest").text("");
                 }
 
                 if (i - 1 == 2) {
@@ -807,7 +805,7 @@ CountDownTimer.prototype.start = function () {
                     mv5 = 1375;
                     $("#mv5").text(mv5);
                     var mv6 = parseInt($("#mv6").text());
-                    mv6 = 480;
+                    mv6 = 420;
                     $("#mv6").text(mv6);
                     var mv7 = parseInt($("#mv7").text());
                     mv7 = 40;
@@ -833,7 +831,7 @@ CountDownTimer.prototype.start = function () {
 
 
                     $("#h1").text("Infosys retains position in top10 IT firms.");
-                    $("#h2").text("Facebook buys 9.99% stake in Airtel.");
+                    $("#h2").text("Google accussed of trafficking user browsing session via chrome incognito mode");
                     $("#h3").text("Demand for oil falls largely due to coronavirus pandemic. WTI & Brent oil drops to 21-year low.");
                     $("#h4").text("HDFC Bank surge up to 21% post Q4 biz update amid Covid-19 woes.");
                     $("#h5").text("70% of banking sector debt affected by corona virus impact.");
@@ -841,7 +839,9 @@ CountDownTimer.prototype.start = function () {
                     $("#h7").text("Google may eye a 5% stake in VI.");
                     $("#h8").text("Amazon pledges $2 billion venture capital fund to invest in clean energy.");
                     $("#h9").text("ICICI Direct expects Zee Ltd.'s net profit to decrease by 55.5% Y-o-Y");
-                    $("#h10").text("");
+                    $("#h10").text("Bharti Airtel PAT may decrease 90% Y-o-Y.");
+
+                    $("#invalidPasswordTest").text("");
                 }
 
                 if (i - 1 == 3) {
@@ -867,7 +867,7 @@ CountDownTimer.prototype.start = function () {
                     mv5 = 1380;
                     $("#mv5").text(mv5);
                     var mv6 = parseInt($("#mv6").text());
-                    mv6 = 510;
+                    mv6 = 430;
                     $("#mv6").text(mv6);
                     var mv7 = parseInt($("#mv7").text());
                     mv7 = 55;
@@ -892,7 +892,7 @@ CountDownTimer.prototype.start = function () {
                     }
 
                     $("#h1").text("Infosys acquires Guidevision & strikes a long term partnership with Lanxess.");
-                    $("#h2").text("Airtel introduces postpaid plans with Prime, Hotstar  subscription.");
+                    $("#h2").text("Airtel to come up with new Airtel extreme fiber broadband plans.");
                     $("#h3").text("Oil demand might increase as worldwide lockdowns come to ease.");
                     $("#h4").text("US law firm files class action suit against HDFC Bank for misleading claims.");
                     $("#h5").text("SBI reported an 81% YoY jump in net profit for Q1 FY21.");
@@ -900,7 +900,9 @@ CountDownTimer.prototype.start = function () {
                     $("#h7").text("Verizon, amazon may invest $4billion in VI.");
                     $("#h8").text("Google working on tools to improve user privacy in digital advertising.");
                     $("#h9").text("Revenues in media sector rises, as they air new shows and episodes.");
-                    $("#h10").text("");
+                    $("#h10").text("Jeff Bezoz might see Amazon shares worth $3.1 billion.");
+
+                    $("#invalidPasswordTest").text("");
                 }
             }
             else {
@@ -924,7 +926,7 @@ CountDownTimer.prototype.start = function () {
                 mv5 = 1400;
                 $("#mv5").text(mv5);
                 var mv6 = parseInt($("#mv6").text());
-                mv6 = 520;
+                mv6 = 440;
                 $("#mv6").text(mv6);
                 var mv7 = parseInt($("#mv7").text());
                 mv7 = 75;
@@ -995,8 +997,8 @@ window.onload = function () {
     $(".sellButton").prop('disabled', true);
 
     var display = document.querySelector('#time');
-    timer = new CountDownTimer(480);
-    timeObj = CountDownTimer.parse(480);
+    timer = new CountDownTimer(5);
+    timeObj = CountDownTimer.parse(5);
 
     format(timeObj.minutes, timeObj.seconds);
 

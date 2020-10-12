@@ -6,7 +6,7 @@ $("#submitButton").click(function () {
 	}
 	else {
 		$("#submitText").val("");
-		$("#invalidPasswordTest").text("Not valid!").show().fadeOut(2000);
+		$("#invalidPasswordTest").text("NOT VALID!").show().fadeOut(2000);
 	}
 });
 
